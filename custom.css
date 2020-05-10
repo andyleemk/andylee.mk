@@ -415,7 +415,7 @@
     font-weight: 900;
     text-align: center;
   }
-  
+
   .quote-box {
     margin: 60px 0px 20px;
   }
@@ -442,6 +442,13 @@
     font-family: 'Raleway';
     font-size: 18px;
     font-weight: 500;
+    line-height: 1.4;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .row > .col-xl-4 > h4.about-description {
+    margin-bottom: 20px;
+      }
   }
 
   .center {
