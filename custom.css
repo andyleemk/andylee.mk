@@ -244,7 +244,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    opacity: 0;
+    opacity: 0.1;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
@@ -283,7 +283,7 @@
   
   .content-details a {
     position: absolute;
-    top: -115px;
+    top: 15px;
     right: 25px;
     color: #fff;
     font-family: 'Raleway';
@@ -296,7 +296,7 @@
   
   .content-details h2 {
     position: absolute;
-    top: -5px;
+    top: -10px;
     right: 0px;
     margin: 25px;
     color: #fff;
@@ -310,20 +310,26 @@
   
   .content-details h4 {
     position: absolute;
-    top: 55px;
+    top: 52.5px;
     right: 0px;
     margin: 25px;
     color: #fff;
     font-family: 'Raleway';
     font-size: 0.8em;
     font-weight: 500;
+    line-height: 1.4;
     text-align: left;
   }
-  
+
   .fadeIn-top{
     top: 50%;
   }
   
+  .list-center {
+    justify-content: center;
+    text-align: center;
+  }
+
   .section-title {
     color: #fff;
     font-family: 'Raleway';
@@ -342,34 +348,27 @@
       padding: 0px;
   }
   
-  ul > li .ability-title {
-      display: inline-block;
-      width: 60%;
+  .skill-container {
+    border: 2.5px #fff solid;
+    padding: 5px;
+    margin: 7px;
+    display: inline-block;
+    border-radius: 30px;
+  }
+    
+  .skill-container:hover {
+    color: #fff !important;
+  }
+
+  .skill-title {
       font-family: 'Raleway';
-      font-size: 16px;
-      font-weight: 600;
+      font-weight: 700;
+      font-size: 1em;
       color: #fff;
+      display: inline;
+      padding: 10px;
   }
-  
-  ul > li .ability-score {
-      float: right;
-  }
-  
-  ul > li {
-      min-height: 30px;
-      padding: 3px 0px;
-  }
-  
-  
-  ul > li .ability-score .fa-star {
-    color: #FFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
+
   hr {
     margin: 45px 0px;
     border: solid #fff 1.25px;
