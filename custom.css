@@ -358,7 +358,7 @@
   @media only screen and (max-width: 480px) {
     .content-details h2 {
         font-size: 1.1em;
-        top: -25px;
+        top: -45px;
         }
     }
 
@@ -386,7 +386,7 @@
   @media only screen and (max-width: 480px) {
      .content-details h4 {
         font-size: 0.8em;
-        top: 22.5px;
+        top: 2.5px;
         }
     }
   
