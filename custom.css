@@ -327,10 +327,24 @@
         }
     }
 
-    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+  @media only screen and (max-width: 1400px) and (min-width: 1200px) {
+  .content-details h4 {
+      font-size: 0.8em;
+      top: 38.5px;
+      }
+  }
+
+  @media only screen and (max-width: 1199px) and (min-width: 674px) {
+    .content-details h2 {
+      font-size: 1.5em;
+      top: 5px;
+      }
+  }
+  
+  @media only screen and (max-width: 1199px) and (min-width: 674px) {
     .content-details h4 {
-        font-size: 0.6em;
-        top: 38.5px;
+        font-size: 0.8em;
+        top: 65px;
         }
     }
 
@@ -341,24 +355,52 @@
         }
     }
 
-    @media only screen and (max-width: 400px) {
-      .content-details h2 {
-         font-size: 1.0em;
-         top: -30px;
-          }
-      }
-
-      @media only screen and (max-width: 400px) {
-        .content-details h4 {
-           font-size: 0.8em;
-           top: 30px;
-            }
+  @media only screen and (max-width: 480px) {
+    .content-details h2 {
+        font-size: 1.1em;
+        top: -25px;
         }
+    }
+
+  @media only screen and (max-width: 401px) {
+     .content-details h2 {
+        font-size: 1.0em;
+        top: -55px;
+        }
+    }  
+
+  @media only screen and (max-width: 376px) {
+    .content-details h2 {
+        font-size: 0.9em;
+        top: -50px;
+        }
+    } 
 
   @media only screen and (max-width: 600px) {
     .content-details h4 {
-        font-size: 0.6em;
+        font-size: 0.8em;
         top: 35.5px;
+        }
+    }
+
+  @media only screen and (max-width: 480px) {
+     .content-details h4 {
+        font-size: 0.8em;
+        top: 22.5px;
+        }
+    }
+  
+  @media only screen and (max-width: 401px) {
+    .content-details h4 {
+        font-size: 0.75em;
+        top: -10px;
+        }
+    }
+
+  @media only screen and (max-width: 376px) {
+    .content-details h4 {
+        font-size: 0.65em;
+        top: -10px;
         }
     }
 
