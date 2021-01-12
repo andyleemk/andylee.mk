@@ -13,7 +13,8 @@
   --cs-text-colour1: #0046D1;
   --cs-text-colour2: #1D510B;
   --cs-text-colour3: #913A08;
-  --background-colour-image: #FAFAFA; }
+  --background-colour-image: #FAFAFA;
+  --in-progress-overlay: rgba(255, 255, 255, 0.8); }
 
 [data-theme="dark"] {
   --background-colour-main: #2B2B2B;
@@ -29,7 +30,8 @@
   --cs-text-colour1: #ADB7FF;
   --cs-text-colour2: #C0DEAE;
   --cs-text-colour3: #F89D68;
-  --background-colour-image: #3D3D3D; }
+  --background-colour-image: #3D3D3D;
+  --in-progress-overlay: rgba(0, 0, 0, 0.8); }
 
 body {
   margin: 0;
@@ -73,6 +75,17 @@ body {
       .container-fluid .mainBody .csContainer:hover {
         transform: scale(1.03);
         box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.2); }
+      .container-fluid .mainBody .csContainer .inProgress {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        top: 0px;
+        position: absolute;
+        z-index: 10;
+        background-color: var(--in-progress-overlay);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
       .container-fluid .mainBody .csContainer .experienceType {
         position: absolute;
         top: 0px;
@@ -105,7 +118,7 @@ body {
         align-items: center;
         color: var(--font-colour); }
         .container-fluid .mainBody .csContainer .header p {
-          font-size: 17.5px; }
+          font-size: 1.2vw; }
       .container-fluid .mainBody .csContainer .body {
         position: absolute;
         top: 20px;
@@ -114,18 +127,18 @@ body {
         color: var(--font-colour); }
         .container-fluid .mainBody .csContainer .body h1 {
           font-weight: 100;
-          font-size: 40px;
+          font-size: 2.5vw;
           margin-bottom: 12.5px; }
         .container-fluid .mainBody .csContainer .body p {
           font-weight: 100;
-          font-size: 17.5px; }
+          font-size: 1.2vw; }
       .container-fluid .mainBody .csContainer .footer {
+        font-size: 1.2vw;
         position: absolute;
         bottom: 15px;
         margin-left: 35px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; }
+        flex-direction: row; }
         .container-fluid .mainBody .csContainer .footer.development {
           color: var(--cs-text-colour1); }
         .container-fluid .mainBody .csContainer .footer.design {
@@ -238,7 +251,8 @@ body {
         .container-fluid .mainBody .projects .projectContainer .bodyText .footer {
           position: absolute;
           display: flex;
-          flex-direction: row; }
+          flex-direction: row;
+          flex-wrap: wrap; }
           .container-fluid .mainBody .projects .projectContainer .bodyText .footer .technology {
             margin-right: 25px;
             text-transform: uppercase; }
@@ -421,7 +435,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 46%;
+    left: 50%;
     padding-top: 480px; }
     .intro .arrowContainer a, .intro .arrowContainer a:hover {
       color: var(--font-colour);
@@ -477,13 +491,27 @@ nav {
     .socialMedia .fa-github:hover, .socialMedia .fa-linkedin:hover, .socialMedia .fa-envelope:hover {
       transform: scale(1.2); }
 
+@media screen and (max-width: 1250px) {
+  .csContainer .body h1 {
+    margin-top: 40px !important; }
+  .csContainer .footer {
+    bottom: 2px !important; } }
+
 @media screen and (max-width: 1050px) {
   .experience, .projects, .about, .footer {
     width: 80% !important; }
   .aboutText {
-    font-size: 1.9vw !important; } }
+    font-size: 1.9vw !important; }
+  .csContainer .header p {
+    font-size: 1.5vw !important; }
+  .csContainer .body h1 {
+    font-size: 3.5vw !important; }
+  .csContainer .body p {
+    font-size: 1.7vw !important; }
+  .csContainer .footer p {
+    font-size: 1.5vw !important; } }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   .experience, .projects, .about, .footer {
     width: 87.5% !important; } }
 
@@ -491,7 +519,7 @@ nav {
   .socialMedia {
     display: none; }
   .introBody {
-    left: 0px !important;
+    left: 35px !important;
     padding-top: 120px !important; }
     .introBody h1, .introBody h2 {
       text-align: center; }
@@ -515,4 +543,22 @@ nav {
       height: 350px !important; }
     .aboutContainer .aboutText {
       font-size: 20px !important;
-      text-align: center; } }
+      text-align: center; }
+  .csContainer {
+    padding-top: 65.5% !important; }
+    .csContainer .csImage {
+      display: none; }
+    .csContainer .header p {
+      font-size: 3.0vw !important; }
+    .csContainer .body {
+      width: 87% !important; }
+      .csContainer .body h1 {
+        font-size: 5.2vw !important; }
+      .csContainer .body p {
+        font-size: 3.3vw !important; }
+    .csContainer .footer p {
+      font-size: 3.0vw !important; } }
+
+@media screen and (max-width: 550px) {
+  .introBody h1 {
+    font-size: 55px !important; } }
