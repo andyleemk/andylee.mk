@@ -435,7 +435,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 50%;
+    left: 47%;
     padding-top: 480px; }
     .intro .arrowContainer a, .intro .arrowContainer a:hover {
       color: var(--font-colour);
@@ -519,7 +519,7 @@ nav {
   .socialMedia {
     display: none; }
   .introBody {
-    left: 35px !important;
+    left: 5px !important;
     padding-top: 120px !important; }
     .introBody h1, .introBody h2 {
       text-align: center; }
