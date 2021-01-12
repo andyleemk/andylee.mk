@@ -96,7 +96,7 @@ anime.timeline({loop: true})
 .add({
   targets: '.ml9 .letter',
   scale: [0, 1],
-  duration: 1500,
+  duration: 2500,
   elasticity: 600,
   delay: (el, i) => 45 * (i+1)
 }).add({
@@ -172,7 +172,7 @@ function playAudio(url) {
  * https://github.com/marcj/css-element-queries/blob/master/LICENSE.
  */
 
- /* Reduced Resizor.js Function */
+ /* Reduced Resizor.js Function, adapted from Marc J. Schmidt's ResizeSensor*/
 
 function ResizeSensor(element, callback)
 {
