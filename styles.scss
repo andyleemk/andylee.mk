@@ -166,6 +166,7 @@ body {
           font-weight: 100;
           font-size: 2.5vw;
           margin-bottom: 12.5px;
+          margin-top: 55px;
         }
 
         p {
@@ -386,7 +387,7 @@ body {
       .aboutText {
         font-family: 'Nunito', sans-serif;
         font-weight: 500;
-        font-size: 1.47vw;
+        font-size: 25px;
         padding-right: 25px;
         color: var(--font-colour);
 
@@ -608,6 +609,8 @@ nav {
     position: absolute;
     left: 150px;
     padding-top: 165px;
+    width: 100%;
+
     h1, h2 {
     font-family: 'Nunito', sans-serif;
     font-weight: 900;
@@ -718,7 +721,7 @@ nav {
     .body {
 
       h1 {
-      margin-top: 40px !important;
+      margin-top: 55px !important;
       }
     }
 
@@ -776,7 +779,7 @@ nav {
   }
 
   .introBody {
-    left: 5px !important;
+    left: 0px !important;
     padding-top: 120px !important;
 
     h1, h2 {
@@ -815,13 +818,14 @@ nav {
 
     .aboutText {
       font-size: 20px !important; 
+      padding-right: 0px !important;
       text-align: center;
     }
   }
 
   .csContainer {
 
-    padding-top: 65.5% !important;
+    padding-top: 50% !important;
 
     .csImage {
       display: none;
@@ -857,6 +861,13 @@ nav {
   .introBody {
     h1 {
       font-size: 55px !important;
+    }
+  }
+  .csContainer {
+    .body {
+      h1 {
+        margin-top: 45px !important; 
+      }
     }
   }
 }

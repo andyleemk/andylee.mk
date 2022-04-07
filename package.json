@@ -1,0 +1,28 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-less": "^4.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.1",
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+    "scss": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyleemk/andyleemk.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyleemk/andyleemk.github.io/issues"
+  },
+  "homepage": "https://github.com/andyleemk/andyleemk.github.io#readme"
+}
